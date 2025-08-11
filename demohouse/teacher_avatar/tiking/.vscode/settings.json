@@ -1,0 +1,37 @@
+{
+  "workbench.activityBar.orientation": "vertical",
+  "dart.flutterSdkPath": ".fvm/flutter_sdk",
+  "search.exclude": {
+    "**/.fvm": true
+  },
+  "files.watcherExclude": {
+    "**/.fvm": true
+  },
+  "files.autoSave": "off",
+  "files.autoSaveDelay": 1000,
+  "workbench.editorAssociations": {
+    "*.pdf": "pdf.preview",
+  },
+  "editor.unicodeHighlight.invisibleCharacters": false,
+  "editor.formatOnSave": true,
+  "editor.fontSize": 12.5,
+  "prettier.printWidth": 140,
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.selectionHighlight": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": "off",
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 140,
+    "editor.rulers": [
+      140
+    ],
+  },
+  "dart.lineLength": 140,
+  "dart.hotReloadOnSave": "manual",
+  "dart.hotReloadProgress": "notification",
+  "workbench.colorTheme": "Office Black Theme (Word)",
+  "explorer.confirmDelete": false
+}

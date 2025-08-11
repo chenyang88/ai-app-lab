@@ -1,0 +1,12 @@
+{
+    "configurations": [
+        {
+            "name": "main (FVM)",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+            "flutterMode": "debug",
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
