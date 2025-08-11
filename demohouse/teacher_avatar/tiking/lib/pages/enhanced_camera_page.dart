@@ -9,20 +9,22 @@ import 'homework_correction_page.dart';
 
 /// 增强的相机页面 - 支持拍照解题和作业批改功能
 class EnhancedCameraPage extends StatefulWidget {
-  const EnhancedCameraPage({super.key});
+  final CameraMode initialMode;
+  const EnhancedCameraPage({super.key, this.initialMode = CameraMode.questionSolving});
 
   @override
   State<EnhancedCameraPage> createState() => _EnhancedCameraPageState();
 }
 
 class _EnhancedCameraPageState extends State<EnhancedCameraPage> {
-  CameraMode _currentMode = CameraMode.questionSolving;
+  late CameraMode _currentMode;
   late final CameraService _cameraService;
 
   @override
   void initState() {
     super.initState();
     _cameraService = context.read<CameraService>();
+    _currentMode = widget.initialMode;
     _initializeCamera();
   }
 

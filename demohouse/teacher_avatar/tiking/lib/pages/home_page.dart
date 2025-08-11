@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'enhanced_camera_page.dart';
+import '../services/enhanced_multimodal_service.dart';
 
 /// 主页面 - 提供功能选择
 class HomePage extends StatelessWidget {
@@ -51,6 +52,24 @@ class HomePage extends StatelessWidget {
                   ),
 
                   const SizedBox(height: 20),
+
+                  // 作业批改入口（直接进入增强相机并默认作业批改模式）
+                  _buildFeatureCard(
+                    context,
+                    title: '作业批改',
+                    subtitle: '整页批改 • 错因分析 • 建议',
+                    description: '对整页作业进行检测\n指出错误并提供建议\n支持多题型',
+                    icon: Icons.assignment_turned_in,
+                    gradient: const LinearGradient(
+                      colors: [Colors.orange, Colors.deepOrange],
+                      begin: Alignment.topLeft,
+                      end: Alignment.bottomRight,
+                    ),
+                    onTap:
+                        () => Navigator.of(context).push(
+                          MaterialPageRoute(builder: (context) => const EnhancedCameraPage(initialMode: CameraMode.homeworkCorrection)),
+                        ),
+                  ),
                 ],
               ),
             ),
